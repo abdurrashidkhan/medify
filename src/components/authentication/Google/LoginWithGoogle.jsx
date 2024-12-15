@@ -1,14 +1,11 @@
 import { auth } from "@/app/firebase.init";
 import Loading from "@/app/loading";
-import userInfoInsert from "@/database/userInfoInsert/userInfoInsert";
 import Image from "next/image";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import googleLogo from "../../../images/googleLogo.png";
-export default async function LoginWithGoogle() {
-  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-  // const [cUser, cLoading, cError] = useAuthState(auth);
-  // console.log(cUser.accessToken);
 
+export default function LoginWithGoogle() {
+  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const googleLogin = async () => {
     await signInWithGoogle();
   };
@@ -21,29 +18,23 @@ export default async function LoginWithGoogle() {
     accessToken: user?.user?.accessToken,
   };
   if (user) {
+    userInfoInsert(userInfo);
     console.log(userInfo);
-    await userInfoInsert(userInfo);
   }
-
   if (loading) {
     return <Loading></Loading>;
   }
-
   let errorElement = "";
   if (error) {
     errorElement = <p className="text-danger">Error: {error?.message}</p>;
   }
-
   return (
     <div>
-      <button onClick={() => googleLogin()}>
+      <button className="mt-2">
         <Image
           className="mx-auto w-[30px] h-auto"
           loading="lazy"
-          // placeholder="blur"
           src={googleLogo}
-          width={"100%"}
-          height={"auto"}
           alt="Loading...."
         />
       </button>
