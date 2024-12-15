@@ -1,3 +1,4 @@
+import LoginWithFb from "../Facebbok/LoginWithFb";
 import LoginWithGoogle from "../Google/LoginWithGoogle";
 
 export default function LoginWithAll() {
@@ -9,7 +10,7 @@ export default function LoginWithAll() {
       <div className="flex gap-5 items-center justify-center py-5">
         <LoginWithGoogle />
         {/* || */}
-        {/* <LoginWithFb /> */}
+        <LoginWithFb />
       </div>
     </div>
   );

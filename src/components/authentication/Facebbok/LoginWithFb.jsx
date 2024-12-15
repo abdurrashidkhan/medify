@@ -1,10 +1,10 @@
 import { auth } from "@/app/firebase.init";
 import Loading from "@/app/loading";
-import userInfoInsert from "@/database/userInfoInsert/userInfoInsert";
+import userInfoInsert from "@/db/userInfoInsert/userInfoInsert";
 import Image from "next/image";
 import { useSignInWithFacebook } from "react-firebase-hooks/auth";
 import facebookLogo from "../../../images/fbLogo.png";
-export default async function LoginWithFb() {
+export default function LoginWithFb() {
   const [signInWithFacebook, user, loading, error] =
     useSignInWithFacebook(auth);
   // facebook user login after data save database
@@ -20,7 +20,7 @@ export default async function LoginWithFb() {
     accessToken: user?.user?.accessToken,
   };
   if (user) {
-    await userInfoInsert(userInfo);
+    userInfoInsert(userInfo);
   }
   if (loading) {
     return <Loading></Loading>;
