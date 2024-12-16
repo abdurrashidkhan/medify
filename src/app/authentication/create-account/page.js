@@ -82,6 +82,13 @@ export default function SinUp() {
     <section className="text-[#000]">
       <div className="container mx-auto px-2 relative h-[100vh]">
         <div className="login_content_center w-[400px]  h-auto bg-[#fff]  p-3 rounded shadow-2xl">
+          <div className="text-center pt-6 pb-4">
+            <h1 className="text-2xl font-medium">Sign up</h1>
+            <h2 className="text-slate-800 pt-2">
+              {" "}
+              Start watching today. Cancel any time.
+            </h2>
+          </div>
           <form className="" onSubmit={handleSubmit(onSubmit)}>
             <div className="my-2">
               <label htmlFor="userName" className="block">

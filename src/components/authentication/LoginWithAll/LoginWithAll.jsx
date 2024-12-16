@@ -9,7 +9,7 @@ export default function LoginWithAll() {
       </div>
       <div className="flex gap-5 items-center justify-center py-5">
         <LoginWithGoogle />
-        {/* || */}
+        ||
         <LoginWithFb />
       </div>
     </div>
