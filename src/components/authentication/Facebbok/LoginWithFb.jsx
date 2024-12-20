@@ -1,6 +1,6 @@
 import { auth } from "@/app/firebase.init";
 import Loading from "@/app/loading";
-import userInfoInsert from "@/db/userInfoInsert/userInfoInsert";
+import userInfoInsert from "@/database/userInfoInsert/userInfoInsert";
 import Image from "next/image";
 import { useSignInWithFacebook } from "react-firebase-hooks/auth";
 import facebookLogo from "../../../images/fbLogo.png";
