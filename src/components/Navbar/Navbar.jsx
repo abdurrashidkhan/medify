@@ -48,7 +48,7 @@ export default function Navbar() {
     return <Loading></Loading>;
   }
   return (
-    <div className="navbar bg-[#fff] dark:bg-[#122033] border-b border-[#603bf65e] shadow-2xl fixed z-[9999] py-0">
+    <nav className="navbar bg-[#fff] dark:bg-[#122033] border-b border-[#603bf65e] shadow-2xl fixed z-[9999] py-0">
       <div className="container mx-auto px-2">
         <div className="navbar">
           <div className="navbar-start">
@@ -216,6 +216,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
