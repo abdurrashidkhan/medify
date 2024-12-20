@@ -3,7 +3,6 @@ import { auth } from "@/app/firebase.init";
 import Loading from "@/app/loading";
 import CheckAdmin from "@/components/Admin/CheckAdmin";
 import CheckingUser from "@/components/Admin/checkingUser";
-import insertBooks from "@/database/insert/insertBooks";
 import { useEffect, useState } from "react";
 import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";

@@ -1,4 +1,4 @@
-
+// "use client";
 
 export default async function userInfoInsert(data) {
   // console.log(data)
