@@ -79,7 +79,7 @@ export default function WhyOrderFromUs() {
                       />
                     </svg>
                   </div>
-                  <div className="timeline-end timeline-box">
+                  <div className="timeline-end timeline-box bg-slate-100 rounded border border-[#07598518] shadow-2xl">
                     <h2 className="text-xl font-semibold text-start text-slate-800">
                       {data?.title}
                     </h2>

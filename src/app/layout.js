@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${tiroBangla.className} bangla-text ${poppins.className}    antialiased bg-[#fff] text-slate-800`}
+        className={`${tiroBangla.className} ${poppins.className}    antialiased bg-[#fff] text-slate-800`}
       >
         {children}
       </body>
