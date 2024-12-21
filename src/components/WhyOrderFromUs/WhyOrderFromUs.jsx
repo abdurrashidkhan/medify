@@ -55,7 +55,7 @@ export default function WhyOrderFromUs() {
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-5">
           {/*  */}
           <div className="w-[98%] sm:w-[70%] h-auto mx-auto">
-            <Image className="w-" src={svg} alt="loading"></Image>
+            <Image className="w-full" src={svg} alt="loading"></Image>
           </div>
           <div className="">
             <ul className="timeline timeline-vertical timeline-compact overflow-y-auto w-full h-[300px] py-5">
