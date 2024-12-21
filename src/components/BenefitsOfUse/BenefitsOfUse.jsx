@@ -9,6 +9,10 @@ export default function BenefitsOfUse() {
     { title: "গো.পনাঙ্গ বেঁকে যাওয়া রোধ করে।" },
     { title: "বিশেষ সময়ে লি.ঙ্গের উত্থান জনিত সমস্যা দূর করবে।" },
     { title: "শুক্রা-ণুর সংখ্যা এবং গুণমান উন্নত করবে।" },
+    {
+      title:
+        "আমাদের প্রোডাক্ট কোন ওষুধ না এগুলা প্রাকৃতিক উপাদান।যা সম্পূর্ণ পাশ্বপ্রতিক্রিয়া বিহীন।",
+    },
   ];
 
   return (
@@ -21,12 +25,12 @@ export default function BenefitsOfUse() {
             </strong>{" "}
             ব্যবহারের উপকারিতা
           </h1>
-          <p className="pt-3 pb-6 text-lg">
+          <p className="pt-3 pb-6 text-[19px]">
             এই ঔষধ ব্যবহারে কি কি উপকারিতা পাবেন |
           </p>
         </div>
         <div>
-          <ul className="timeline timeline-vertical">
+          <ul className="timeline timeline-vertical ">
             {benefit?.map((b, index) => (
               <li>
                 <hr />

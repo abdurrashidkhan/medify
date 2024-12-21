@@ -1,0 +1,26 @@
+/* Scrollbar width */
+#whyOrderFromUs::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#whyOrderFromUs ::-webkit-scrollbar-track {
+  background: #f1f1f1; /* হালকা ব্যাকগ্রাউন্ড */
+}
+
+/* Handle */
+#whyOrderFromUs ::-webkit-scrollbar-thumb {
+  background: #888; /* গাঢ় থাম্ব রঙ */
+  border-radius: 5px; /* রাউন্ড থাম্ব */
+}
+
+/* Handle on hover */
+#whyOrderFromUs ::-webkit-scrollbar-thumb:hover {
+  background: #555; /* হোভার থাম্ব রঙ */
+}
+
+/* Firefox-specific */
+#whyOrderFromUs * {
+  scrollbar-width: thin; /* পাতলা স্ক্রলবার */
+  scrollbar-color: #07598538 #ebebebc7; /* থাম্ব রঙ এবং ট্র্যাক রঙ */
+}
