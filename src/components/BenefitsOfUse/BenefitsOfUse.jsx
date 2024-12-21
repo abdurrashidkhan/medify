@@ -33,17 +33,17 @@ export default function BenefitsOfUse() {
           <ul className="timeline timeline-vertical ">
             {benefit?.map((b, index) => (
               <li>
-                <hr />
+                <hr className="bg-[#075985]" />
                 <div
                   className={
                     index % 2 === 0
-                      ? "timeline-start timeline-box  rounded-br-none  text-lg bg-slate-100"
-                      : "timeline-end timeline-box  rounded-tl-none text-lg bg-slate-100"
+                      ? "timeline-start timeline-box  rounded-br-none  text-lg bg-slate-100 border-[#075985] shadow-2xl"
+                      : "timeline-end timeline-box  rounded-tl-none text-lg bg-slate-100 border-[#075985] shadow-2xl"
                   }
                 >
                   {index % 2 === 0 ? b?.title : b?.title}
                 </div>
-                <hr />
+                <hr className="bg-[#075985]" />
               </li>
             ))}
           </ul>
