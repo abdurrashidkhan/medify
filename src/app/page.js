@@ -2,6 +2,7 @@ import BenefitsOfUse from "@/components/BenefitsOfUse/BenefitsOfUse";
 import MainPage from "@/components/MainPage/MainPage";
 import Navbar from "@/components/Navbar/Navbar";
 import QuestionAndAns from "@/components/QuestionAndAns/QuestionAndAns";
+import OurReview from "@/components/Review/OurReview";
 import WhyOrderFromUs from "@/components/WhyOrderFromUs/WhyOrderFromUs";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <WhyOrderFromUs />
       {/* সচরাচর জানতে চাওয়া প্রশ্নের উত্তর */}
       <QuestionAndAns />
+      <OurReview />
     </>
   );
 }
