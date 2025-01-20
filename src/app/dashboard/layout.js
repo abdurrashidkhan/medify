@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
   const [signOut, outLoading, OutError] = useSignOut(auth);
   const dashboardRouting = [
     { path: "/dashboard", name: "Overview" },
-    { path: "/dashboard/add-product", name: "Add Product" },
+    { path: "/dashboard/add-new-product", name: "Add New Product" },
     { path: "/dashboard/manage-product", name: "Manage Product" },
   ];
 

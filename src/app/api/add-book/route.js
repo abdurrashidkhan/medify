@@ -1,42 +1,37 @@
 import connectMongodb from "@/lib/mongodb";
-import books from "@/models/booksSchema";
+import products from "@/models/productsSchema";
+import books from "@/models/productsSchema";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
   const {
-    bookName,
+    productName,
     title,
-    contentDurations,
-    contentType,
-    catagories,
-    displaySection,
-    contentSubtitles,
-    director,
-    cast,
-    freeOrPaid,
+    productPrice,
+    deliveryCharges,
+    discount,
+    orderNumber,
     description,
-    video,
+    date,
+    thumbnail,
+    lgImage,
     smImage,
-    lgImage
   } = await request.json();
   const data = {
-    bookName,
+    productName,
     title,
-    contentDurations,
-    contentType,
-    catagories,
-    displaySection,
-    contentSubtitles,
-    director,
-    cast,
-    freeOrPaid,
+    productPrice,
+    deliveryCharges,
+    discount,
+    orderNumber,
     description,
-    video,
+    date,
+    thumbnail,
+    lgImage,
     smImage,
-    lgImage
   };
   await connectMongodb();
-  await books.create(data);
+  await products.create(data);
   return NextResponse.json({
     message: "data upload success",
     status: true,
@@ -45,7 +40,7 @@ export async function POST(request) {
 }
 export async function GET(request) {
   await connectMongodb();
-  const allBooks = await books.find({}).catch();
+  const allBooks = await products.find({}).catch();
   // console.log(allUser)
   return NextResponse.json({ allBooks });
 }

@@ -1,5 +1,5 @@
 import connectMongodb from "@/lib/mongodb";
-import books from "@/models/booksSchema";
+import books from "@/models/productsSchema";
 import { NextResponse } from "next/server";
 
 export async function DELETE(request, { params }) {

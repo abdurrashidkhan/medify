@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-export default async function insertBooks(insertData, seIsLoading, reset) {
+export default async function insertProducts(insertData, seIsLoading, reset) {
   try {
     // C:\projects\digital-marketing-agency\src\app\api\merge-marketing\v1\users\insert-user\[email].js
     const res = await fetch(`/api/add-book/`, {

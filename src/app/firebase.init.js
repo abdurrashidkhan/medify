@@ -5,19 +5,15 @@ import { getAuth } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBqI3DdZ9PRmEBpQ73XSlmEawSn8JJx8Ew",
-  authDomain: "book-listenin.firebaseapp.com",
-  projectId: "book-listenin",
-  storageBucket: "book-listenin.appspot.com",
-  messagingSenderId: "362485493708",
-  appId: "1:362485493708:web:b9b383a3f89779bb3ef769",
-  measurementId: "G-9LPTQGEVSX",
+  apiKey: "AIzaSyAj2THg6hXU2z0pIb5NRBsYkh2LJbdg_m0",
+  authDomain: "medify-4902d.firebaseapp.com",
+  projectId: "medify-4902d",
+  storageBucket: "medify-4902d.firebasestorage.app",
+  messagingSenderId: "192370216118",
+  appId: "1:192370216118:web:79d9c3df62527ad51cea17"
 };
 
 // Initialize Firebase
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
 export const auth = getAuth(app);

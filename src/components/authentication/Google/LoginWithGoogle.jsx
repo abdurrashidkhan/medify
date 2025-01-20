@@ -1,5 +1,6 @@
 import { auth } from "@/app/firebase.init";
 import Loading from "@/app/loading";
+import userInfoInsert from "@/database/userInfoInsert/userInfoInsert";
 import Image from "next/image";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import googleLogo from "../../../images/googleLogo.png";
@@ -29,7 +30,7 @@ export default function LoginWithGoogle() {
     errorElement = <p className="text-danger">Error: {error?.message}</p>;
   }
   return (
-    <div>
+    <div onClick={() => googleLogin()}>
       <button className="mt-2">
         <Image
           className="mx-auto w-[30px] h-auto"

@@ -1,5 +1,6 @@
 import BenefitsOfUse from "@/components/BenefitsOfUse/BenefitsOfUse";
-import MainPage from "@/components/MainPage/MainPage";
+import Footer from "@/components/Footer/Footer";
+import MainBanner from "@/components/MainBanner/MainBanner";
 import Navbar from "@/components/Navbar/Navbar";
 import QuestionAndAns from "@/components/QuestionAndAns/QuestionAndAns";
 import OurReview from "@/components/Review/OurReview";
@@ -9,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <MainPage />
+      <MainBanner />
       {/* এই ওষুধে কি কি উপকার আপনার হবে  */}
       <BenefitsOfUse />
       {/* কেনো আমাদের থেকে কেন অর্ডার করবেন */}
@@ -17,6 +18,7 @@ export default function Home() {
       {/* সচরাচর জানতে চাওয়া প্রশ্নের উত্তর */}
       <QuestionAndAns />
       <OurReview />
+      <Footer />
     </>
   );
 }
