@@ -19,6 +19,7 @@ export default function DbNavbar() {
   const dashboardRouting = [
     { path: "/dashboard", name: "Overview" },
     { path: "/dashboard/add-new-product", name: "Add New Product" },
+    { path: "/dashboard/products-benefits", name: "Add Benefits of products" },
     { path: "/dashboard/manage-products", name: "Manage Products" },
   ];
 
