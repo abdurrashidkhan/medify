@@ -1,6 +1,5 @@
 import connectMongodb from "@/lib/mongodb";
 import products from "@/models/productsSchema";
-import books from "@/models/productsSchema";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
@@ -40,7 +39,7 @@ export async function POST(request) {
 }
 export async function GET(request) {
   await connectMongodb();
-  const allBooks = await products.find({}).catch();
+  const allProducts = await products.find({}).catch();
   // console.log(allUser)
-  return NextResponse.json({ allBooks });
+  return NextResponse.json({ allProducts });
 }
