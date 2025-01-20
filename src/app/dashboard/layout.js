@@ -3,6 +3,7 @@ import { auth } from "@/app/firebase.init";
 import Loading from "@/app/loading";
 import CheckAdmin from "@/components/Admin/CheckAdmin";
 import CheckingUser from "@/components/Admin/checkingUser";
+import DbNavbar from "@/components/Navbar/DbNavbar";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -18,7 +19,7 @@ const Layout = ({ children }) => {
   const dashboardRouting = [
     { path: "/dashboard", name: "Overview" },
     { path: "/dashboard/add-new-product", name: "Add New Product" },
-    { path: "/dashboard/manage-product", name: "Manage Product" },
+    { path: "/dashboard/manage-products", name: "Manage Products" },
   ];
 
   useEffect(() => {
@@ -34,7 +35,8 @@ const Layout = ({ children }) => {
   console.log(open);
   return (
     <>
-      {/* <Navbar /> */}
+      <DbNavbar />
+
       <div className="container mx-auto px-2  pt-[60px] sm:pt-[50px] ">
         {/* end  */}
         <div className="flex gap-0 relative">
